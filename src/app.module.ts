@@ -11,6 +11,7 @@ import config from './config';
 @Module({
   imports: [
     ConfigModule.forRoot({
+      isGlobal: true,
       load: [config],
     }),
     MongooseModule.forRootAsync({
